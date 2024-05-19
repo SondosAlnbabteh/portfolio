@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  </head>
+  <body>
+<!---------------------header---------------------->
+      <header>
+        <nav>
+         
+          <a href="" class="logo"><span>My</span> portfolio</a>
+          <ul class="links">
+           <li class="active"><a href="index.html">Home</a></li>
+           <li><a href="">About</a></li>
+           <li><a href="">Skills</a></li>
+           <li><a href="">Projects</a></li>
+           <li><a href="">Contact</a></li>
+          </ul>
+
+          <div class="social-links">
+            <a href="https://github.com/SondosAlnbabteh"><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <i id="btnMenu" class="fa-solid fa-bars"></i>
+        </nav>
+      </header>
+<!---------------------end header---------------------->
+<!---------------------hero section---------------------->
+
+<main>
+ <div class="contact-container">
+    <div class="intro-contact">
+        <h2>Contact Me</h2>
+        <p>Contact me by filling out the form:</p>
+    </div>
+  <div class="row">
+   <div class="column columnImage">
+          <img src="c:\Users\Orange\Downloads\laptop.jfif" style="width:100%; height: 400px;">
+        </div>
+   <div class="column columnForm">
+   
+      <form action="">
+        <label for="fname">Full Name</label>
+        <input type="text" id="fname" name="fullname" placeholder="Your name..">
+    
+        <label for="email">Last Name</label>
+        <input type="email" id="email" name="email" placeholder="Your email..">
+    
+        <label for="country">Country</label>
+        <input type="text" id="country" name="country" placeholder="Your country..">
+      
+    
+        <label for="Message">Message</label>
+        <textarea id="Message" name="Message" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+   </div>
+ </div> 
+</main>
+<!------------------end hero section---------------------->
+<!----------------footer--------------------->
+      <footer class="footer-distributed">
+      
+           <div class="contact">
+            |
+            <a href="">Contact</a>
+           </div>
+
+           <div>
+             <i class="fa-solid fa-location-dot"></i>
+             <p>Zarqa Jordan</p>
+           </div>
+
+           <div>
+             <i class="fa-solid fa-phone"></i>
+             <p>0786114062</p>
+           </div>
+           
+           <div>
+             <i class="fa-solid fa-envelope"></i>
+             <p><a href="">salehSondos135@gmail.com</a></p>
+           </div>
+       
+      </footer>
+    <!----------------/footer--------------------->
+    <script>
+      let btnMenu = document.getElementById("btnMenu");
+      let NavLinks = document.querySelector(".links");
+
+      btnMenu.onclick = function(){
+        NavLinks.classList.toggle("active");
+        btnMenu.classList.toggle("fa-times")
+       
+      }
+    </script>
+  </body>
+</html>

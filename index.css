@@ -1,0 +1,328 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #eff5f6;
+}
+body{
+   background-color: #030303;
+    margin: 0;
+}
+/********************navebar*********************/
+header{
+   
+    background-color: #030303;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 1px 2px 240px rgb(223, 205, 180);
+    z-index: 100;
+}
+
+header nav{
+    display: flex;/*العناصر جمب بعض */
+    justify-content: space-between;/*مشان يبعدوا عن بعض */
+    align-items: center;/*نفس الصف*/
+    width: 85%;
+    margin: auto;
+    height: 80px;
+} 
+
+header nav .logo{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bolder;
+}
+header nav .logo span{
+    color: rgb(226, 193, 145);
+}
+header nav .links{
+    display: flex;/*جمب بعض*/
+    
+}
+header nav .links li{
+    position: relative;
+    margin: 0 25px; 
+    height: 80px;
+    line-height: 80px;/*مشلن يجوا بالنص*/
+    list-style: none;
+}
+header nav .links li::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: rgb(226, 193, 145);
+    transition: 0.3s;
+}
+header nav .links li:hover::after,
+header nav .links li.active::after{
+    width: 100%;
+}
+header nav .links li a{
+    color: #c8c6c6;
+    font-size: 17px;
+}
+header nav .social-links a i{
+    color: rgb(226, 193, 145);
+    font-size: 24px;
+    margin-left: 15px;
+}
+header nav .social-links a i:hover{
+    color: #fff;
+}
+/******************** end navebar*********************/
+/*********************hero section*************************/
+.hero-sec{
+    height: 100vh;
+    overflow: hidden;
+}
+.hero-sec .contanier{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+.hero-sec .contanier .div-text{
+    width: 50%;
+}
+.hero-sec .contanier .div-text h1{
+    color: #fff;
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+.hero-sec .contanier .div-text span{
+    font-size: 40px;
+}
+.hero-sec .contanier .div-text p{
+    color: c8c6c6;
+    font-size: 18px;
+    margin: 10px 0px 50px;
+    line-height: 1.7;/*بتبعد السطور عن بعض*/
+}
+.hero-sec .contanier .div-text .btn{
+   color: #fff;
+   border: 1px solid rgb(226, 193, 145);
+   background-color: rgb(226, 193, 145);
+   padding: 14px 40px;
+   border-radius: 5px;
+   transition: 0.3s;
+}
+.hero-sec .contanier .div-text .btn:hover{
+    background: transparent;
+}
+
+#btnMenu{
+    display: none;
+}
+/********************* end hero section*************************/
+
+/*********card**********/
+.card {
+    box-shadow: 0 10px 30px white;
+    transition: 0.3s;
+    width: 30%;
+    line-height: 3;
+  }
+  
+  .card:hover {
+    box-shadow: 15px 8px 50px white;
+  }
+  
+  .info{
+    padding: 5px 30px;
+   
+  }
+
+  .info p{
+    font-size: x-small;
+  }
+  /*********end card**********/
+/***************contact page*****************/
+
+.contact-container {
+    
+    border-radius: 5px;
+    background-color: #171616;
+    padding: 10px;
+  }
+  .intro-contact{
+    text-align:center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+input[type=text],input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+   
+  }
+  
+  input[type=submit] {
+    background-color:rgb(226, 193, 145) ;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(230, 210, 179);
+  }
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+ 
+
+/***************end contact page*****************/
+
+/*footer**/
+
+.footer-distributed{
+    background-color: #171616;
+    box-sizing: border-box;
+    widows: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+    display: flex;/*العناصر جمب بعض */
+    justify-content: space-between;/*مشان يبعدوا عن بعض */
+    align-items: center;/*نفس الصف*/
+}
+
+
+.footer-distributed i{
+    margin-bottom: 8px;
+    color: #ffff;
+}
+
+.contact a:hover{
+color: rgb(226, 193, 145);
+}
+
+ 
+/******end footer**/
+
+
+/*  Responsive */
+
+@media (max-width : 888px) {
+    header nav .links{
+        position: absolute;
+        top: 100%;
+        right: -400px;
+        flex-direction: column;
+        background-color:rgb(0, 0, 0) ;
+        border-left: 1px solid #444444a8;
+        width: 400px;
+        height: 100vh;
+        z-index: 100;
+        text-align: center;
+        padding: 20px 0;
+        transition: 0.3s;
+    }
+    header nav .links.active{
+        right: 0;
+    }
+    .social-links{
+
+        display: none;
+    }
+    #btnMenu{
+        display: block;
+        font-size: 30px;
+    }
+    .hero-sec{
+        height: auto;
+    }
+    .hero-sec .contanier{
+        flex-direction: column;
+    }
+    .hero-sec .contanier .div-text{
+        width: 80%;
+        margin-top:150px;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    .hero-sec .contanier .dic-img{
+        position: relative;
+        width: 50%;
+    }
+    .hero-sec .contanier .div-text h1{
+    
+        font-size: 50px;
+   
+    }
+    .hero-sec .contanier .div-text span{
+        font-size: 30px;
+    }
+
+    /*************Responsive card************/
+    .card:hover {
+        box-shadow: 2px 2px 10px  white;
+      }
+      
+      .card{
+        line-height: 2;
+        font-size: small;
+      }
+
+    /*********end Responsive card************/
+
+    /**********Responsive footer**********/
+    
+    footer{
+        position: static;
+    }
+
+    .footer-distributed  
+    {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center; 
+       
+    }
+
+    /**********end Responsive footer**********/
+
+}
+
+@media (max-width:437px)
+{
+    .hero-sec .contanier .div-text h1{
+    
+        font-size: 35px;
+   
+    }
+    .hero-sec .contanier .div-text span{
+        font-size: 25px;
+    }
+    .hero-sec .contanier .div-text p{
+        font-size: 16px;
+    }
+    
+}
+/***************Responsive contact page*****************/
+@media screen and (max-width: 700px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  /***************end Responsive contact page*****************/
