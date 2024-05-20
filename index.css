@@ -409,6 +409,10 @@ header nav .social-links a i:hover{
     video{
       margin: auto;
     }
+    .column-33 img{
+        width: 50%;
+        height: 20%;
+    }
     .projects-titel{
         
         font-size: 30px;
@@ -528,6 +532,7 @@ color: rgb(226, 193, 145);
       .card{
         line-height: 2;
         font-size: small;
+        overflow: hidden; 
       }
 
     /*********end Responsive card************/
