@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  </head>
+  <body>
+<!---------------------header---------------------->
+      <header>
+        <nav>
+         
+          <a href="" class="logo"><span>My</span> portfolio</a>
+          <ul class="links">
+           <li><a href="index.html">Home</a></li>
+           <li><a href="about.html">About</a></li>
+           <li><a href="skills.html">Skills</a></li>
+           <li><a href="contact.html">Contact</a></li>
+           <li><a href="projects.html">Projects</a></li>
+          </ul>
+
+          <div class="social-links">
+            <a href="https://github.com/SondosAlnbabteh"><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <i id="btnMenu" class="fa-solid fa-bars"></i>
+        </nav>
+      </header>
+<!---------------------end header---------------------->
+<!-------------------------main------------------------->
+<section class="about-me">
+   <div class="education">
+      <h4>Education</h4>
+      <h1>Bachelor's degree from <br>Hashemite University</h1>
+      <hr class="hr-about">
+      <p>
+        I acquired foundational knowledge in various programming languages during my academic journey, further expanding my skills beyond university by self-learning PHP and enrolling in the Orange Programming Academy. Through these experiences, I developed a strong understanding of software development principles and gained practical expertise in web development and backend programming. My commitment to continuous learning has allowed me to stay updated with the latest technologies and trends in the industry.</p>
+   </div>
+
+   <div class="text-about">
+       <h4>About</h4>
+       <h1>I guarantee your business<br>Suceess - Love to Help you</h1>
+       <hr class="hr-about">
+       <p>passionate software developer with a degree in Software Engineering from the Hashemite University. I have worked on several projects that have honed my skills and allowed me to apply my knowledge practically. I thrive on solving complex problems and creating efficient, user-friendly applications. Whether working on the frontend to create a seamless user experience or developing robust backend systems, I bring dedication and expertise to every project.
+       </p>
+       
+       <div class="last-text">
+          <div class="text1">
+             <h3>2+</h3>
+             <h5>Projects Done</h5>
+          </div>
+
+          <div class="text2">
+             <h3>0</h3>
+             <h5>Happy Clients</h5>
+          </div>
+       </div>
+   </div>
+</section>
+
+<!-------------------------end main--------------------->
+<!----------------footer--------------------->
+      <footer class="footer-distributed">
+      
+           <div class="contact">
+            |
+            <a href="contact.html">Contact</a>
+           </div>
+
+           <div>
+             <i class="fa-solid fa-location-dot"></i>
+             <p>Zarqa Jordan</p>
+           </div>
+
+           <div>
+             <i class="fa-solid fa-phone"></i>
+             <a href="tel:+962 786 114 062"><p>+962 786 114 062</p></a>
+           </div>
+           
+           <div>
+             <i class="fa-solid fa-envelope"></i>
+             <p><a href="mailto:salehsondos135@gmail.com">salehSondos135@gmail.com</a></p>
+           </div>
+       
+      </footer>
+    <!----------------/footer--------------------->
+    <script>
+      let btnMenu = document.getElementById("btnMenu");
+      let NavLinks = document.querySelector(".links");
+
+      btnMenu.onclick = function(){
+        NavLinks.classList.toggle("active");
+        btnMenu.classList.toggle("fa-times")
+       
+      }
+    </script>
+  </body>
+</html>

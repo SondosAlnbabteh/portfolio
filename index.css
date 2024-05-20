@@ -19,6 +19,7 @@ header{
     right: 0;
     box-shadow: 1px 2px 240px rgb(223, 205, 180);
     z-index: 100;
+    position: relative; 
 }
 
 header nav{
@@ -59,6 +60,7 @@ header nav .links li::after{
     background: rgb(226, 193, 145);
     transition: 0.3s;
 }
+
 header nav .links li:hover::after,
 header nav .links li.active::after{
     width: 100%;
@@ -152,19 +154,30 @@ header nav .social-links a i:hover{
     border-radius: 5px;
     background-color: #171616;
     padding: 10px;
+    max-width: 700px; /* قم بتحديد الحد الأقصى للعرض */
+    margin: 0 auto; /* لتوسيط العنصر */
+    overflow: hidden; /
   }
+
   .intro-contact{
     text-align:center;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
-input[type=text],input[type=email], select, textarea {
+
+  .intro-contact h2{
+   font-size: 30px;
+   margin-bottom: 20px;
+   color:rgb(226, 193, 145)
+  }
+
+  input[type=text],input[type=email], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-   
+    margin-bottom: 10px; /* تقليل المسافة بين الحقول */
   }
   
   input[type=submit] {
@@ -174,23 +187,252 @@ input[type=text],input[type=email], select, textarea {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 20px;
+    width: 100%; /* لجعل الزر يمتد على كامل العرض */
   }
   
   input[type=submit]:hover {
     background-color: rgb(230, 210, 179);
-  }
+  } 
+
   .column {
-    float: left;
-    width: 50%;
-    margin-top: 6px;
-    padding: 20px;
+    width: 100%; /* لجعل الأعمدة تمتد على كامل العرض في الشاشات الصغيرة */
+    padding: 10px;
   }
+
+  .columnForm input{
+    margin-bottom: 30px;
+
+  }
+  
+  
   
  
 
 /***************end contact page*****************/
+/****************skills page***********************/
+#classification{
+    padding: 25px 0 25px 0;
+   
+}
+#title-skills{
+    padding: 40px 0 ;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Verdana;
+}
+#classify-row{
+    display: flex;
+    padding: 0 100px 0 100px;
+  
+}
+#classify-col{
+    box-shadow: 2px 2px 2px #bbb;
+    border: 1px solid #bbb;
+    background-color: #0c110d;
+    margin: 10px;
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+}
+#classify-col h2{
+    background-color: rgb(226, 193, 145);
+    color: #131111;
+    text-align: center;
+    padding: 5px;
+    
+}
+#classify-col h5{
+    margin-bottom: 10px;
+    line-height: 25px;
+    margin-top: 10px;
+}
+#image{
+  
+    margin:20px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid rgb(24, 24, 23);
+}
+#image img{
+    
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
-/*footer**/
+
+
+/*****************end skills page*****************/
+/********************About page**********************/
+.about-me{
+    padding: 4% 10%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  
+    gap: 4rem;
+}
+.education{
+    padding: 6% 0;
+    max-width: 600px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    margin-bottom: 60px;
+    flex: 1;
+}
+.text-about{
+    padding: 6% 0;
+}
+.about-me h4{
+    color: burlywood;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.about-me h1{
+    color: #bbb;
+    font-size: 36px;
+    text-transform: capitalize;
+    font-weight: 700;
+    line-height: 46px;
+    margin-bottom: 30px;
+}
+.hr-about{
+    width: 30%;
+    border: none;
+    height: 2px;
+    background-color: burlywood;
+    margin-bottom: 50px;
+}
+.text-about{
+    max-width: 600px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    margin-bottom: 60px;
+}
+.last-text{
+    display: flex;
+}
+.text1{
+    margin-right: 60px;
+}
+.last-text h3{
+    color: burlywood;
+    font-size: 60px;
+    font-weight: 700;
+}
+.last-text h5{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+/******************end About page*********************/
+/******************projects page*****************/
+.contener-projects{
+    align-items: center;
+}
+.projects-titel{
+    color: #fff;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 50px;
+}
+
+.project-description{
+   line-height: 30px;
+}
+
+.container-projects {
+    padding: 64px;
+  }
+  
+  .row-projects:after {
+    content: "";
+    display: table;
+    clear: both
+  }
+  
+  .column-55 {
+    float: left;
+    width: 55.66666%;
+    padding: 30px;
+  }
+  
+  .column-33 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+  }
+  
+  .large-font {
+    margin-bottom:15px ;
+    font-size: 28px;
+  }
+  
+  .xlarge-font {
+    font-size: 54px
+  }
+  
+  .button {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: burlywood;
+    margin-top: 40px;
+  }
+  
+  video{
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .column-55,
+    .column-33 {
+      width: 100%;
+      text-align: center;
+    }
+    video{
+      margin: auto;
+    }
+    .projects-titel{
+        
+        font-size: 30px;
+    }
+    .project-description{
+        line-height: 20px;
+     }
+     .large-font {
+       
+        font-size: 18px;
+      }
+      
+      .xlarge-font {
+        font-size: 44px
+      }
+      .button {
+       
+        font-size: 10px;
+       
+      }
+     
+  }
+/******************end projects page*****************/
+/****************footer****************/
 
 .footer-distributed{
     background-color: #171616;
@@ -203,6 +445,7 @@ input[type=text],input[type=email], select, textarea {
     display: flex;/*العناصر جمب بعض */
     justify-content: space-between;/*مشان يبعدوا عن بعض */
     align-items: center;/*نفس الصف*/
+  
 }
 
 
@@ -225,7 +468,7 @@ color: rgb(226, 193, 145);
     header nav .links{
         position: absolute;
         top: 100%;
-        right: -400px;
+        right: -450px;
         flex-direction: column;
         background-color:rgb(0, 0, 0) ;
         border-left: 1px solid #444444a8;
@@ -250,24 +493,29 @@ color: rgb(226, 193, 145);
     .hero-sec{
         height: auto;
     }
+
     .hero-sec .contanier{
         flex-direction: column;
     }
+
     .hero-sec .contanier .div-text{
         width: 80%;
         margin-top:150px;
         margin-bottom: 60px;
         text-align: center;
     }
+
     .hero-sec .contanier .dic-img{
         position: relative;
         width: 50%;
     }
+
     .hero-sec .contanier .div-text h1{
     
         font-size: 50px;
    
     }
+
     .hero-sec .contanier .div-text span{
         font-size: 30px;
     }
@@ -300,8 +548,46 @@ color: rgb(226, 193, 145);
     }
 
     /**********end Responsive footer**********/
+    /**********Responsive skills page**********/
+
+    #classify-row{
+        flex-wrap: wrap;
+        padding: 0 10px 0 10px;
+    }
+    /**********end Responsive skills page**********/
+    
 
 }
+
+ /**********Responsive about page**********/
+ @media(max-width:1385) {
+ .about-me{
+    padding: 4% 4%;
+    transition: .3s;
+ }
+ .education{
+    width: 500px;
+    height: auto;
+    transition: .3s;
+ }
+}
+ @media(max-width:1240px){
+    .text-about h1{
+        font-size: 30px;
+        transition: .3s;
+    }
+ }
+ @media (max-width:1040px) {
+    .about-me{
+        flex-wrap: wrap;
+        height: 100%;
+      
+    }
+    .main-img img{
+        padding-top: 40px;
+    }
+ }
+ /**********end Responsive about page**********/
 
 @media (max-width:437px)
 {
@@ -320,6 +606,12 @@ color: rgb(226, 193, 145);
 }
 /***************Responsive contact page*****************/
 @media screen and (max-width: 700px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  @media screen and (max-width: 1147px) {
     .column, input[type=submit] {
       width: 100%;
       margin-top: 0;

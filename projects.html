@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  </head>
+  <body>
+<!---------------------header---------------------->
+      <header>
+        <nav>
+         
+          <a href="" class="logo"><span>My</span> portfolio</a>
+          <ul class="links">
+           <li><a href="index.html">Home</a></li>
+           <li><a href="about.html">About</a></li>
+           <li><a href="skills.html">Skills</a></li>
+           <li><a href="contact.html">Contact</a></li>
+           <li><a href="projects.html">Projects</a></li>
+          </ul>
+
+          <div class="social-links">
+            <a href="https://github.com/SondosAlnbabteh"><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <i id="btnMenu" class="fa-solid fa-bars"></i>
+        </nav>
+      </header>
+<!---------------------end header---------------------->
+<!-------------------main--------------------->
+
+    
+        <h1 class="projects-titel">Projects Portfolio</h1>
+    
+
+      
+<!--  Section 1-->
+<div class="container-projects">
+    <div class="row-projects">
+      <div class="column-55">
+        <h1 class="xlarge-font"><b>Websit</b></h1>
+        <h1 class="large-font" style="color:MediumSeaGreen;"><b>Compare prices of skin care products</b></h1>
+        <p class="project-description"> This site has been created to offer a wide range of skincare products tailored to your specific skin type and budget. Whether you're looking for the perfect moisturizer, cleanser, or treatment, you'll find the right products to meet your skincare needs at the desired price.</p>
+       <a href="https://github.com/SondosAlnbabteh/graduation-project"> <button class="button">The Project</button></a>
+      </div>
+      <div class="column-33">
+        <video controls width="535" height="471">
+            <source src="grad-project.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+  
+  <!--Section 2-->
+  <div class="container-projects" style="background-color:#171616">
+    <div class="row-projects">
+      <div class="column-33">
+        <img src="Screenshot 2024-05-20 231856.png" alt="App" width="435" height="471">
+      </div>
+      <div class="column-55">
+        <h1 class="xlarge-font"><b>Websit</b></h1>
+        <h1 class="large-font" style="color:red;"><b>portfolio </b></h1>
+        <p class="project-description">This site features various sections, including Home, About, Skills, Projects, and Contact. Here, you can learn about my professional background, explore my skill set, view the projects I've worked on, and get in touch with me for any inquiries or opportunities.</p>
+        <a href="https://github.com/SondosAlnbabteh/portfolio"><button class="button">The Project</button></a>
+      </div>
+    </div>
+  </div>
+  
+ 
+   
+
+
+
+<!-------------------end main--------------------->
+<!----------------footer--------------------->
+      <footer class="footer-distributed">
+      
+           <div class="contact">
+            |
+            <a href="contact.html">Contact</a>
+           </div>
+
+           <div>
+             <i class="fa-solid fa-location-dot"></i>
+             <p>Zarqa Jordan</p>
+           </div>
+
+           <div>
+             <i class="fa-solid fa-phone"></i>
+             <a href="tel:+962 786 114 062"><p>+962 786 114 062</p></a>
+           </div>
+           
+           <div>
+             <i class="fa-solid fa-envelope"></i>
+             <p><a href="mailto:salehsondos135@gmail.com">salehSondos135@gmail.com</a></p>
+           </div>
+       
+      </footer>
+    <!----------------/footer--------------------->
+    <script>
+      let btnMenu = document.getElementById("btnMenu");
+      let NavLinks = document.querySelector(".links");
+
+      btnMenu.onclick = function(){
+        NavLinks.classList.toggle("active");
+        btnMenu.classList.toggle("fa-times")
+       
+      }
+    </script>
+  </body>
+</html>
