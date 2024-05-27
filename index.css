@@ -6,6 +6,7 @@
     text-decoration: none;
     color: #eff5f6;
 }
+
 body{
    background-color: #030303;
     margin: 0;
@@ -47,7 +48,7 @@ header nav .links li{
     position: relative;
     margin: 0 25px; 
     height: 80px;
-    line-height: 80px;/*مشلن يجوا بالنص*/
+    line-height: 80px;/*مشان يجوا بالنص*/
     list-style: none;
 }
 header nav .links li::after{
@@ -61,8 +62,8 @@ header nav .links li::after{
     transition: 0.3s;
 }
 
-header nav .links li:hover::after,
-header nav .links li.active::after{
+header nav .links li:hover::after
+{
     width: 100%;
 }
 header nav .links li a{
@@ -107,7 +108,7 @@ header nav .social-links a i:hover{
     color: c8c6c6;
     font-size: 18px;
     margin: 10px 0px 50px;
-    line-height: 1.7;/*بتبعد السطور عن بعض*/
+    line-height: 1.7;
 }
 .hero-sec .contanier .div-text .btn{
    color: #fff;
@@ -128,14 +129,14 @@ header nav .social-links a i:hover{
 
 /*********card**********/
 .card {
-    box-shadow: 0 10px 30px white;
+    box-shadow: 0 5px 20px white;
     transition: 0.3s;
     width: 30%;
     line-height: 3;
   }
   
   .card:hover {
-    box-shadow: 15px 8px 50px white;
+    box-shadow: 1px 8px 25px white;
   }
   
   .info{
@@ -171,13 +172,13 @@ header nav .social-links a i:hover{
    color:rgb(226, 193, 145)
   }
 
-  input[type=text],input[type=email], select, textarea {
+  input[type=text],input[type=email], textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    margin-bottom: 10px; /* تقليل المسافة بين الحقول */
+    margin-bottom: 10px; 
   }
   
   input[type=submit] {
@@ -195,8 +196,8 @@ header nav .social-links a i:hover{
     background-color: rgb(230, 210, 179);
   } 
 
-  .column {
-    width: 100%; /* لجعل الأعمدة تمتد على كامل العرض في الشاشات الصغيرة */
+  .columnForm {
+    width: 100%; 
     padding: 10px;
   }
 
@@ -207,8 +208,6 @@ header nav .social-links a i:hover{
   
   
   
- 
-
 /***************end contact page*****************/
 /****************skills page***********************/
 #classification{
@@ -273,7 +272,6 @@ header nav .social-links a i:hover{
     width: 100%;
     height: 100vh;
     display: flex;
-  
     gap: 4rem;
 }
 .education{
@@ -281,7 +279,7 @@ header nav .social-links a i:hover{
     max-width: 600px;
     color: #fff;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 1.7;
     margin-bottom: 60px;
     flex: 1;
@@ -350,11 +348,15 @@ header nav .social-links a i:hover{
 }
 
 .project-description{
+
    line-height: 30px;
+
 }
 
 .container-projects {
+
     padding: 64px;
+    
   }
   
   .row-projects:after {
@@ -406,7 +408,8 @@ header nav .social-links a i:hover{
       width: 100%;
       text-align: center;
     }
-    video{
+    video,
+    .portfolioImg{
       margin: auto;
     }
     .column-33 img{
@@ -439,16 +442,16 @@ header nav .social-links a i:hover{
 /****************footer****************/
 
 .footer-distributed{
-    background-color: #171616;
-    box-sizing: border-box;
-    widows: 100%;
+    background-color: rgb(27, 26, 26);
+
+   
     text-align: left;
     font: bold 16px sans-serif;
     padding: 50px 50px 60px 50px;
-    margin-top: 80px;
-    display: flex;/*العناصر جمب بعض */
-    justify-content: space-between;/*مشان يبعدوا عن بعض */
-    align-items: center;/*نفس الصف*/
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   
 }
 
@@ -486,8 +489,8 @@ color: rgb(226, 193, 145);
     header nav .links.active{
         right: 0;
     }
+    
     .social-links{
-
         display: none;
     }
     #btnMenu{
@@ -525,14 +528,16 @@ color: rgb(226, 193, 145);
     }
 
     /*************Responsive card************/
-    .card:hover {
-        box-shadow: 2px 2px 10px  white;
-      }
-      
+   
       .card{
         line-height: 2;
         font-size: small;
         overflow: hidden; 
+        box-shadow: 0px 3px 3px  white;
+      }
+      .info{
+        padding: 5px 15px;
+       
       }
 
     /*********end Responsive card************/
@@ -611,13 +616,13 @@ color: rgb(226, 193, 145);
 }
 /***************Responsive contact page*****************/
 @media screen and (max-width: 700px) {
-    .column, input[type=submit] {
+    .columnForm, input[type=submit] {
       width: 100%;
       margin-top: 0;
     }
   }
   @media screen and (max-width: 1147px) {
-    .column, input[type=submit] {
+    .columnForm, input[type=submit] {
       width: 100%;
       margin-top: 0;
     }
